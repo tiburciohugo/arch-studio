@@ -1,5 +1,7 @@
 {
   "name": "arch-studio",
+  "description": "Arch Studio landing page",
+  "author": "Hugo Tiburcio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
