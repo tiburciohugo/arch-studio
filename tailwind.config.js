@@ -16,9 +16,10 @@ module.exports = {
         red: "#df5656",
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "home-mobile": "url('/home/mobile/image-hero-paramour.jpg')",
+        "home-desktop": "url('/home/desktop/image-hero-paramour.jpg')",
+        "small-mobile": "url('/home/mobile/image-small-team.jpg')",
+        "small-desktop": "url('/home/desktop/image-small-team.jpg')",
       },
     },
   },
