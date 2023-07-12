@@ -1,26 +1,6 @@
 import Button from "@/components/UI/Button";
+import { homeData } from "@/data";
 import Link from "next/link";
-
-const data = [
-  {
-    id: 1,
-    title: "project del sol",
-    imageMobile: "/portfolio/mobile/image-del-sol.jpg",
-    imageDesktop: "/portfolio/desktop/image-del-sol.jpg",
-  },
-  {
-    id: 2,
-    title: "228B tower",
-    imageMobile: "/portfolio/mobile/image-228b.jpg",
-    imageDesktop: "/portfolio/desktop/image-228b.jpg",
-  },
-  {
-    id: 3,
-    title: "le prototype",
-    imageMobile: "/portfolio/mobile/image-prototype.jpg",
-    imageDesktop: "/portfolio/desktop/image-prototype.jpg",
-  },
-];
 
 export default function Home() {
   return (
@@ -42,6 +22,7 @@ export default function Home() {
             icon={true}
             hover={true}
             active={true}
+            navigateTo="/portfolio"
           />
         </div>
       </section>
@@ -82,6 +63,7 @@ export default function Home() {
             icon={true}
             hover={true}
             active={true}
+            navigateTo="/about"
           />
         </div>
       </section>
@@ -90,7 +72,7 @@ export default function Home() {
         <h1 className="text-5xl font-bold capitalize">featured</h1>
 
         <div className="pb-20 capitalize text-white">
-          {data.map((item) => (
+          {homeData.map((item) => (
             <div className="relative mt-16" key={item.id}>
               <img
                 src={item.imageMobile}

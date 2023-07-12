@@ -11,19 +11,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="h-screen w-screen">
       <head>
         <title>Arch Studio</title>
-        <link
-          rel="icon"
-          href="/favicon.png"
-        />
+        <link rel="icon" href="/favicon.png" />
       </head>
-      <body className={league.className}>
+      <body
+        className={`${league.className} h-screen w-screen`}
+      >
         <Header />
         {children}
         <Footer />
-        </body>
+      </body>
     </html>
   );
 }
