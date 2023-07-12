@@ -30,7 +30,7 @@ export default function About() {
       <Image
         src={imgSrc}
         alt="hero"
-        className="w-full"
+        className="w-full object-cover"
         width={375}
         height={240}
       />
@@ -62,7 +62,7 @@ export default function About() {
         </p>
 
         <p className="mt-4 w-[90%] text-lg font-medium leading-normal text-dark-gray">
-          Speciliazing in Urban Design allowed us to focus on creating
+          Specializing in Urban Design allowed us to focus on creating
           exceptional structures that live in harmony with their surroundings.
           We consider every detail from every surrounding element to inform our
           designs.
@@ -89,7 +89,7 @@ export default function About() {
                 height={240}
                 className="mt-14 w-full"
               />
-              <h1 className="text-[32px] font-bold leading-10 text-very-dark-blue mt-4">
+              <h1 className="mt-4 text-[32px] font-bold leading-10 text-very-dark-blue">
                 {leader.name}
               </h1>
               <p className="text-lg font-medium leading-normal text-dark-gray">
