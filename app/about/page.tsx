@@ -36,7 +36,7 @@ export default function About() {
       />
 
       <div className="pl-6 pt-10">
-        <div className="absolute left-0 top-[6%] h-[45px] w-[343px] bg-white" />
+        <div className="absolute left-0 top-[6.5%] h-[60px] w-[343px] bg-white" />
         <h1 className="text-5xl font-bold leading-[52px] text-very-dark-blue">
           Your team of professionals
         </h1>
