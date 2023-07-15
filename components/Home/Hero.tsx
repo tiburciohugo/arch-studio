@@ -1,199 +1,58 @@
 "use client";
 import React from "react";
-import Button from "../UI/Button";
-import Image from "next/image";
+import Carousel from "../Carousel";
+import CarouselContent from "../CarouselContent";
+import { CarouselItem } from "@/types/types";
 
 export default function Hero() {
-  const [width, setWidth] = React.useState(0);
-
-  React.useEffect(() => {
-    setWidth(window.innerWidth);
-    window.addEventListener("resize", () => setWidth(window.innerWidth));
-  }, []);
+  const items: CarouselItem[] = [
+    {
+      id: 1,
+      content: (
+        <CarouselContent
+          title={["project", "paramour"]}
+          imagePath="/home/desktop/image-hero-paramour.jpg"
+          description="Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture."
+        />
+      ),
+    },
+    {
+      id: 2,
+      content: (
+        <CarouselContent
+          title={["seraph", "station"]}
+          imagePath="/home/desktop/image-hero-seraph.jpg"
+          description="Description for project 2"
+        />
+      ),
+    },
+    {
+      id: 3,
+      content: (
+        <CarouselContent
+          title={["federal  ii", "tower"]}
+          imagePath="/home/desktop/image-hero-federal.jpg"
+          description="Description for project 3"
+        />
+      ),
+    },
+    {
+      id: 4,
+      content: (
+        <CarouselContent
+          title={["trinity bank", "tower"]}
+          imagePath="/home/desktop/image-hero-trinity.jpg"
+          description="Description for project 4"
+        />
+      ),
+    },
+  ];
 
   return (
-    <section className="carousel relative flex h-[560px] w-full flex-col items-center px-6 py-16 text-white md:h-[720px] md:px-12 md:py-32 xl:px-40 xl:py-40">
-      <div id="item1" className="carousel-item">
-        <Image
-          src={
-            width > 375
-              ? "/home/desktop/image-hero-paramour.jpg"
-              : "/home/mobile/image-hero-paramour.jpg"
-          }
-          alt="hero"
-          width={1110}
-          height={720}
-          className="absolute inset-0 z-0 h-[560px] w-full object-cover md:h-[720px] md:w-[573px] lg:w-[832px] xl:w-[1152px]"
-        />
-
-        <div className="absolute inset-0 z-10 h-[560px] w-full bg-black bg-opacity-50 md:h-[720px] md:w-[573px] lg:w-[832px] xl:w-[1152px]"></div>
-
-        <div className="flex flex-col">
-          <h1 className="z-20 text-6xl font-semibold capitalize md:text-8xl">
-            project
-            <br /> paramour
-          </h1>
-          <p className="z-20 mt-4 md:w-3/4 md:text-lg">
-            Project made for an art museum near Southwest London. Project
-            Paramour is a statement of bold, modern architecture.
-          </p>
-
-          <Button
-            classname="z-20 mt-16 px-8 justify-center w-[252px] h-[72px] capitalize bg-dark-blue gap-4"
-            children="see our portfolio"
-            icon={true}
-            hover={true}
-            active={true}
-            navigateTo="/portfolio"
-          />
-        </div>
-      </div>
-
-      {/* <div id="item2" className="carousel-item">
-        <Image
-          src={
-            width > 375
-              ? "/home/desktop/image-hero-paramour.jpg"
-              : "/home/mobile/image-hero-paramour.jpg"
-          }
-          alt="hero"
-          width={1110}
-          height={720}
-          className="absolute inset-0 z-0 h-[560px] w-full object-cover md:h-[720px] md:w-[573px] lg:w-[832px] xl:w-[1152px]"
-        />
-
-        <div className="absolute inset-0 z-10 h-[560px] w-full bg-black bg-opacity-50 md:h-[720px] md:w-[573px] lg:w-[832px] xl:w-[1152px]"></div>
-
-        <div className="flex flex-col">
-          <h1 className="z-20 text-6xl font-semibold capitalize md:text-8xl">
-            project
-            <br /> paramour 2
-          </h1>
-          <p className="z-20 mt-4 md:w-3/4 md:text-lg">
-            Project made for an art museum near Southwest London. Project
-            Paramour is a statement of bold, modern architecture.
-          </p>
-
-          <Button
-            classname="z-20 mt-16 px-8 justify-center w-[252px] h-[72px] capitalize bg-dark-blue gap-4"
-            children="see our portfolio"
-            icon={true}
-            hover={true}
-            active={true}
-            navigateTo="/portfolio"
-          />
-        </div>
-      </div>
-
-      <div id="item3" className="carousel-item">
-        <Image
-          src={
-            width > 375
-              ? "/home/desktop/image-hero-paramour.jpg"
-              : "/home/mobile/image-hero-paramour.jpg"
-          }
-          alt="hero"
-          width={1110}
-          height={720}
-          className="absolute inset-0 z-0 h-[560px] w-full object-cover md:h-[720px] md:w-[573px] lg:w-[832px] xl:w-[1152px]"
-        />
-
-        <div className="absolute inset-0 z-10 h-[560px] w-full bg-black bg-opacity-50 md:h-[720px] md:w-[573px] lg:w-[832px] xl:w-[1152px]"></div>
-
-        <div className="flex flex-col">
-          <h1 className="z-20 text-6xl font-semibold capitalize md:text-8xl">
-            project
-            <br /> paramour 3
-          </h1>
-          <p className="z-20 mt-4 md:w-3/4 md:text-lg">
-            Project made for an art museum near Southwest London. Project
-            Paramour is a statement of bold, modern architecture.
-          </p>
-
-          <Button
-            classname="z-20 mt-16 px-8 justify-center w-[252px] h-[72px] capitalize bg-dark-blue gap-4"
-            children="see our portfolio"
-            icon={true}
-            hover={true}
-            active={true}
-            navigateTo="/portfolio"
-          />
-        </div>
-      </div>
-
-      <div id="item4" className="carousel-item">
-        <Image
-          src={
-            width > 375
-              ? "/home/desktop/image-hero-paramour.jpg"
-              : "/home/mobile/image-hero-paramour.jpg"
-          }
-          alt="hero"
-          width={1110}
-          height={720}
-          className="absolute inset-0 z-0 h-[560px] w-full object-cover md:h-[720px] md:w-[573px] lg:w-[832px] xl:w-[1152px]"
-        />
-
-        <div className="absolute inset-0 z-10 h-[560px] w-full bg-black bg-opacity-50 md:h-[720px] md:w-[573px] lg:w-[832px] xl:w-[1152px]"></div>
-
-        <div className="flex flex-col">
-          <h1 className="z-20 text-6xl font-semibold capitalize md:text-8xl">
-            project
-            <br /> paramour 4
-          </h1>
-          <p className="z-20 mt-4 md:w-3/4 md:text-lg">
-            Project made for an art museum near Southwest London. Project
-            Paramour is a statement of bold, modern architecture.
-          </p>
-
-          <Button
-            classname="z-20 mt-16 px-8 justify-center w-[252px] h-[72px] capitalize bg-dark-blue gap-4"
-            children="see our portfolio"
-            icon={true}
-            hover={true}
-            active={true}
-            navigateTo="/portfolio"
-          />
-        </div>
-      </div> */}
-
-      <div className="absolute -left-20 bottom-0 flex opacity-0 xl:opacity-100">
-        <Button
-          classname="z-20 mt-16 px-8 justify-center capitalize bg-white shadow-none text-dark-gray gap-4 hover:bg-light-gray"
-          children={
-            <a href="#item1" className="btn-xs btn">
-              01
-            </a>
-          }
-        />
-
-        <Button
-          classname="z-20 mt-16 px-8 justify-center capitalize bg-white shadow-none text-dark-gray gap-4 hover:bg-light-gray"
-          children={
-            <a href="#item2" className="btn-xs btn">
-              02
-            </a>
-          }
-        />
-
-        <Button
-          classname="z-20 mt-16 px-8 justify-center capitalize bg-white shadow-none text-dark-gray gap-4 hover:bg-light-gray"
-          children={
-            <a href="#item3" className="btn-xs btn">
-              03
-            </a>
-          }
-        />
-
-        <Button
-          classname="z-20 mt-16 px-8 justify-center capitalize bg-white shadow-none text-dark-gray gap-4 hover:bg-light-gray"
-          children={
-            <a href="#item4" className="btn-xs btn">
-              04
-            </a>
-          }
-        />
-      </div>
-    </section>
+    <div className="relative">
+      <Carousel items={items} />
+    </div>
   );
 }
+
+

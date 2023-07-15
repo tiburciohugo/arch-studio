@@ -1,3 +1,6 @@
+import { title } from "process";
+import { CarouselContent, CarouselItem } from "./types/types";
+
 export const homeData = [
   {
     id: 1,
@@ -147,3 +150,5 @@ export const leaders = [
     image: "/about/desktop/avatar-maria.jpg",
   },
 ];
+
+
