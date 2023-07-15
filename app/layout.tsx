@@ -11,7 +11,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="h-screen w-screen">
+    <html lang="en" className="h-screen w-screen bg-white">
       <head>
         <title>Arch Studio</title>
         <link rel="icon" href="/favicon.png" />

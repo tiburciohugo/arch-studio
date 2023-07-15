@@ -37,7 +37,7 @@ export default function About() {
 
       <div className="pl-6 pt-10">
         <div className="absolute left-0 top-[6.5%] h-[60px] w-[343px] bg-white" />
-        <h1 className="text-5xl font-bold leading-[52px] text-very-dark-blue">
+        <h1 className="text-5xl font-bold leading-[52px] text-dark-blue">
           Your team of professionals
         </h1>
 
@@ -51,7 +51,7 @@ export default function About() {
       <div className="my-16 ml-6 h-px w-[65px] bg-dark-gray"></div>
 
       <div className="pl-6">
-        <h1 className="text-5xl font-bold leading-[52px] text-very-dark-blue">
+        <h1 className="text-5xl font-bold leading-[52px] text-dark-blue">
           Our <br /> Heritage
         </h1>
 
@@ -75,7 +75,7 @@ export default function About() {
       </div>
 
       <div className="px-6 py-24">
-        <h1 className="text-5xl font-bold leading-[52px] text-very-dark-blue">
+        <h1 className="text-5xl font-bold leading-[52px] text-dark-blue">
           The <br /> Leaders
         </h1>
 
@@ -89,7 +89,7 @@ export default function About() {
                 height={240}
                 className="mt-14 w-full"
               />
-              <h1 className="mt-4 text-[32px] font-bold leading-10 text-very-dark-blue">
+              <h1 className="mt-4 text-[32px] font-bold leading-10 text-dark-blue">
                 {leader.name}
               </h1>
               <p className="text-lg font-medium leading-normal text-dark-gray">

@@ -42,7 +42,7 @@ export default function Contact() {
 
       <div className="pl-6 pt-10">
         <div className="absolute left-0 top-[9%] h-[70px] w-[343px] bg-white" />
-        <h1 className="text-5xl font-bold leading-[52px] text-very-dark-blue">
+        <h1 className="text-5xl font-bold leading-[52px] text-dark-blue">
           Tell us about your project
         </h1>
 
@@ -55,7 +55,7 @@ export default function Contact() {
       <div className="my-16 ml-6 h-px w-[65px] bg-dark-gray"></div>
 
       <div className="pl-6">
-        <h1 className="text-5xl font-bold leading-[52px] text-very-dark-blue">
+        <h1 className="text-5xl font-bold leading-[52px] text-dark-blue">
           Contact <br /> Details
         </h1>
 
@@ -69,7 +69,7 @@ export default function Contact() {
         </p>
 
         <Button
-          classname="flex items-center justify-start self-end mt-2 w-full text-very-dark-blue gap-4"
+          classname="flex items-center justify-start self-end mt-2 w-full text-dark-blue gap-4"
           children="View on Map"
           icon={true}
         />
@@ -84,7 +84,7 @@ export default function Contact() {
         </p>
 
         <Button
-          classname="flex items-center justify-start self-end mt-2 w-full text-very-dark-blue gap-4"
+          classname="flex items-center justify-start self-end mt-2 w-full text-dark-blue gap-4"
           children="View on Map"
           icon={true}
         />
@@ -101,7 +101,7 @@ export default function Contact() {
       </div>
 
       <div className="px-6 py-20">
-        <h1 className="text-5xl font-bold leading-[52px] text-very-dark-blue">
+        <h1 className="text-5xl font-bold leading-[52px] text-dark-blue">
           Connect <br /> with us
         </h1>
 
@@ -110,7 +110,7 @@ export default function Contact() {
             <input
               type="text"
               name="name"
-              className="mt-4 h-[72px] w-full border-b border-dark-gray px-8 text-xl font-bold leading-normal text-dark-gray focus:border-very-dark-blue focus:outline-none"
+              className="mt-4 h-[72px] w-full border-b border-dark-gray px-8 text-xl font-bold leading-normal text-dark-gray focus:border-dark-blue focus:outline-none"
               placeholder="Name"
               maxLength={50}
             />
@@ -118,21 +118,21 @@ export default function Contact() {
             <input
               type="email"
               name="email"
-              className="mt-4 h-[72px] w-full border-b border-dark-gray px-8 text-xl font-bold leading-normal text-dark-gray focus:border-very-dark-blue focus:outline-none"
+              className="mt-4 h-[72px] w-full border-b border-dark-gray px-8 text-xl font-bold leading-normal text-dark-gray focus:border-dark-blue focus:outline-none"
               placeholder="Email"
             />
 
             <input
               type="textarea"
               name="message"
-              className="mt-4 h-[72px] w-full border-b border-dark-gray px-8 text-xl font-bold leading-normal text-dark-gray focus:border-very-dark-blue focus:outline-none"
+              className="mt-4 h-[72px] w-full border-b border-dark-gray px-8 text-xl font-bold leading-normal text-dark-gray focus:border-dark-blue focus:outline-none"
               placeholder="Message"
               maxLength={500}
             />
           </div>
 
           <Button
-            classname="bg-very-dark-blue flex items-center justify-center self-end text-white"
+            classname="bg-dark-blue flex items-center justify-center self-end text-white"
             icon={true}
           />
         </form>

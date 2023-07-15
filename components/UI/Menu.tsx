@@ -34,7 +34,7 @@ export default function Menu({}) {
         leave="transition-opacity duration-500"
         leaveFrom="opacity-100"
         leaveTo="opacity-0"
-        className="fixed right-0 top-20 z-40 h-screen w-screen overflow-y-hidden  bg-very-dark-blue bg-opacity-60"
+        className="fixed right-0 top-20 z-40 h-screen w-screen overflow-y-hidden  bg-dark-blue bg-opacity-60"
       >
         <Transition.Child
           enter="transition ease-in-out duration-300 transform"
@@ -45,7 +45,7 @@ export default function Menu({}) {
           leaveTo="translate-x-full"
           className="fixed right-0 z-50 w-[70%] flex-col items-center justify-start space-y-14 bg-very-light-gray pb-10"
         >
-          <ul className="flex flex-col items-start justify-start space-y-6 px-12 pt-6 text-3xl font-bold capitalize text-very-dark-blue">
+          <ul className="flex flex-col items-start justify-start space-y-6 px-12 pt-6 text-3xl font-bold capitalize text-dark-blue">
             <li>
               <Link href="/portfolio">portfolio</Link>
             </li>

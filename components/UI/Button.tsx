@@ -28,7 +28,7 @@ export default function Button({
           router.push(navigateTo);
         }
       }}
-      className={`${classname} flex h-20 w-20 items-center space-x-4 font-bold lg:h-[72px] lg:w-[177px] ${
+      className={`${classname} flex h-20 w-20 items-center space-x-4 font-bold xl:text-lg shadow-xl ${
         hover && "hover:bg-dark-gray"
       } ${
         active && "active:bg-light-gray"
@@ -50,7 +50,12 @@ export default function Button({
               stroke="currentColor"
               stroke-width="2"
             />
-            <path id="Path" d="M0 10H24" stroke="currentColor" stroke-width="2" />
+            <path
+              id="Path"
+              d="M0 10H24"
+              stroke="currentColor"
+              stroke-width="2"
+            />
           </g>
         </svg>
       )}
