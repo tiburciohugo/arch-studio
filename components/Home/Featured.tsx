@@ -15,6 +15,7 @@ export default function Featured() {
           classname="px-8 md:w-[169px] h-[72px] capitalize bg-dark-blue md:flex items-center justify-center gap-4 w-full text-white hidden"
           children="see all"
           icon={true}
+          hover={true}
         />
       </div>
 

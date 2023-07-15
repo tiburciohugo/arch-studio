@@ -11,15 +11,15 @@ export default function Footer() {
       </div>
 
       <nav>
-        <ul className="mb-6 mt-16 flex flex-col items-center justify-center space-y-6 pt-6 text-lg font-bold capitalize text-dark-gray md:mb-0 md:mt-0 md:w-full md:flex-row md:space-x-6 md:space-y-0 lg:pt-0 xl:text-xl">
+        <ul className="mb-6 mt-16 flex flex-col items-center justify-center space-y-6 pt-6 text-lg font-bold capitalize text-dark-gray md:mb-0 md:mt-0 md:w-full md:flex-row md:space-x-6 md:space-y-0 lg:pt-0 xl:text-xl xl:space-x-16 xl:pl-10">
           <li>
-            <Link href="/portfolio">portfolio</Link>
+            <Link href="/portfolio" className="transition duration-300 ease-in-out hover:text-dark-blue">portfolio</Link>
           </li>
           <li className="md:w-full md:whitespace-nowrap">
-            <Link href="/about">about us</Link>
+            <Link href="/about" className="transition duration-300 ease-in-out hover:text-dark-blue">about us</Link>
           </li>
           <li>
-            <Link href="/contact">contact</Link>
+            <Link href="/contact" className="transition duration-300 ease-in-out hover:text-dark-blue">contact</Link>
           </li>
         </ul>
       </nav>

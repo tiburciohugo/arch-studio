@@ -157,9 +157,9 @@ export default function Hero() {
         </div>
       </div> */}
 
-      <div className="absolute bottom-0 -left-20 flex opacity-0 xl:opacity-100">
+      <div className="absolute -left-20 bottom-0 flex opacity-0 xl:opacity-100">
         <Button
-          classname="z-20 mt-16 px-8 justify-center capitalize bg-white shadow-none text-dark-gray gap-4 hover:bg-dark-blue"
+          classname="z-20 mt-16 px-8 justify-center capitalize bg-white shadow-none text-dark-gray gap-4 hover:bg-light-gray"
           children={
             <a href="#item1" className="btn-xs btn">
               01
@@ -168,7 +168,7 @@ export default function Hero() {
         />
 
         <Button
-          classname="z-20 mt-16 px-8 justify-center capitalize bg-white shadow-none text-dark-gray gap-4 hover:bg-dark-blue"
+          classname="z-20 mt-16 px-8 justify-center capitalize bg-white shadow-none text-dark-gray gap-4 hover:bg-light-gray"
           children={
             <a href="#item2" className="btn-xs btn">
               02
@@ -177,7 +177,7 @@ export default function Hero() {
         />
 
         <Button
-          classname="z-20 mt-16 px-8 justify-center capitalize bg-white shadow-none text-dark-gray gap-4 hover:bg-dark-blue"
+          classname="z-20 mt-16 px-8 justify-center capitalize bg-white shadow-none text-dark-gray gap-4 hover:bg-light-gray"
           children={
             <a href="#item3" className="btn-xs btn">
               03
@@ -186,7 +186,7 @@ export default function Hero() {
         />
 
         <Button
-          classname="z-20 mt-16 px-8 justify-center capitalize bg-white shadow-none text-dark-gray gap-4 hover:bg-dark-blue"
+          classname="z-20 mt-16 px-8 justify-center capitalize bg-white shadow-none text-dark-gray gap-4 hover:bg-light-gray"
           children={
             <a href="#item4" className="btn-xs btn">
               04
