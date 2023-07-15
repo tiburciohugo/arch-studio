@@ -15,8 +15,6 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
     setWidth(window.innerWidth);
   }, []);
 
-  console.log(activeIndex);
-
   return (
     <div className="relative">
       <div className="relative w-full overflow-hidden text-white md:h-[720px]">
@@ -27,12 +25,12 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
               alt="hero"
               width={375}
               height={560}
-              className=" h-[560px] w-full object-cover "
+              className="h-[560px] w-full object-cover"
             />
 
             <div className=" absolute h-[560px] w-full bg-black bg-opacity-50"></div>
 
-            <div className="absolute flex flex-col px-6 py-16">
+            <div className="absolute z-10 flex flex-col px-6 py-16">
               <h1 className="z-20 text-6xl font-semibold capitalize md:text-8xl">
                 project
                 <br /> paramour
