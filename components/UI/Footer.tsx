@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="relative bottom-0 left-0 right-0 flex w-full max-w-[984px] flex-col items-center justify-center bg-light-gray pb-12 md:h-[116px] md:w-[612px] md:flex-row md:justify-start md:gap-10 md:pb-0 lg:ml-24 lg:w-3/4 lg: xl:ml-36 xl:h-[200px]">
+    <footer className="relative bottom-0 left-0 right-0 flex w-full max-w-[984px] flex-col items-center justify-center bg-light-gray pb-12 md:h-[116px] md:w-[612px] md:flex-row md:justify-start md:gap-10 md:pb-0 lg:ml-24 lg:w-3/4 xl:ml-36 xl:h-[200px] lg:mx-auto">
       <div className="relative flex w-full justify-center md:w-auto">
         <Arch />
       </div>

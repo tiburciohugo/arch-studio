@@ -1,15 +1,11 @@
 import React from "react";
 import { portfolioData } from "@/data";
+import PageIdentifier from "@/components/UI/PageIdentifier";
 
 export default function Portfolio() {
   return (
-    <section className="px-6 pb-20 md:px-24 max-w-[90rem] xl:mx-auto">
-      <div className="relative w-6">
-        <div className="absolute -left-11 -top-32 h-[104px] w-[1px] bg-gray-300" />
-        <div className="absolute -left-8 top-6 origin-top-left rotate-90 text-[18px] font-medium uppercase leading-normal tracking-widest text-gray-300">
-          portfolio
-        </div>
-      </div>
+    <section className="w-full max-w-[90rem] px-6 pb-20 md:px-24 xl:px-36">
+      <PageIdentifier pageName="portfolio" />
 
       <div className="flex flex-col pb-12 capitalize text-white lg:grid lg:grid-cols-3 lg:gap-6">
         {portfolioData.map((item) => (

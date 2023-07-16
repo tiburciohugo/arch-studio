@@ -17,7 +17,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.png" />
       </head>
       <body
-        className={`${league.className} h-screen w-screen`}
+        className={`${league.className} lg:justify-center lg:items-center lg:flex lg:flex-col mx-auto max-w-[90rem]`}
       >
         <Header />
         {children}

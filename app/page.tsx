@@ -7,7 +7,7 @@ import PageIdentifier from "@/components/UI/PageIdentifier";
 export default function Home() {
   return (
     <main
-      className="w-full bg-white md:px-24
+      className="w-full md:px-24
 xl:px-36"
     >
       <PageIdentifier pageName="home" />
